@@ -16,35 +16,28 @@ const common = css`
   }
 `;
 
-export const Container = styled.div`
-  position: absolute;
-  padding: 10px;
-  top: 50%;
-  left: 50%;
-  width: 521px;
-  height: 421px;
-  background-color: rgb(153 27 27);
-  color: white;
-`;
-
 export const ModalContainer = styled.div`
   position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 111;
+  background-color: rgba(0, 0, 0, 0.5);
+`;
+
+export const ModalContent = styled.div`
+  margin: 0 auto;
+  margin-top: 200px;
+  height: 500px;
   padding-top: 2.5rem;
   padding-bottom: 2rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  width: 530px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  max-width: 530px;
   border-radius: 0.25rem;
   border: 2px solid black;
   background-color: rgb(153, 27, 27);
-  z-index: 111;
-`;
-
-export const ModalContent = styled.div`
-  height: 100%;
 `;
 
 export const ModalForm = styled.form`

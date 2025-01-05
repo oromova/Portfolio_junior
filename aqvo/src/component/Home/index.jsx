@@ -3,6 +3,7 @@ import logo from '../../assets/logo.png';
 import { useTranslation } from 'react-i18next';
 import Marquee from "react-fast-marquee";
 import Modal from './HomeModal';
+// import homeImg from '../../assets/homeBack.jpg';
 
 export const Home = () => {
   const { t, i18n } = useTranslation();
@@ -44,11 +45,9 @@ export const Home = () => {
                   <LangOption value='en'>En</LangOption>
                 </LangSelect>
                 {/* <DropIcon /> */}
-
               </ContainerLang>
               {/* Contact */}
               <ContainerContact>
-                {/* <ButtonContact onClick={}>Bog'lanish</ButtonContact> */}
                 <Modal />
               </ContainerContact>
 
@@ -61,7 +60,7 @@ export const Home = () => {
         <Main.Box>
           <Marquee>
             <Main.Title>
-              {/* {t(' Tabiiy mahsulotlar! Sifat va ishonch!')} */}
+              {t('Tabiiy mahsulotlar! Sifat va ishonch!')}
             </Main.Title>
           </Marquee>
         </Main.Box>
@@ -72,14 +71,10 @@ export const Home = () => {
               <Description.Subtitle>
                 {t('AQVO – O‘zbekistonda birinchi bo‘lib sifat va halollikni o‘zida mujassam etgan, jiz mahsulotlarini yangicha ta’m va zamonaviy dizaynda taqdim etuvchi yetakchi brend.')}
               </Description.Subtitle>
-
             </Description>
           </Wrapper>
-
         </Container>
-
       </Main>
-      {/* </Container> */}
     </div >
   );
 };

@@ -17,7 +17,7 @@ export const Navbar = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1160px;
+  width: 100%;
   height: 60px;
   background-color: rgb(99, 21, 25);
   border-radius: 40px;
@@ -92,10 +92,12 @@ export const LangOption = styled.option`
 export const ContainerContact = styled.div``;
 
 // MAIN
-export const Main = styled.div``;
+export const Main = styled.div`
+  height: 100%;
+`;
 
 Main.Box = styled.div`
-  margin-top: 250px;
+  margin-top: 200px;
 `;
 
 Main.Title = styled.div`
@@ -108,13 +110,13 @@ Main.Title = styled.div`
 export const Description = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-top: 70px;
-  width: 1160px;
+  margin-top: 150px;
+  /* width: 1160px; */
 `;
 
 Description.Subtitle = styled.p`
   max-width: 350px;
-  height: 96px;
+  height: 105px;
   color: rgb(255 255 255);
   line-height: 24px;
   font-size: 16px;

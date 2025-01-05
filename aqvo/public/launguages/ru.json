@@ -13,5 +13,12 @@
   "Hudud": "Регион",
   "Mahsulot": "Продукт",
   "Franshiza": "Франшиза",
-  "Xabar": "Сообщение"
+  "Xabar": "Сообщение",
+  "carusel": {
+    "title": "О бренде Aqvo",
+    "subtitle": "Aqvo - sifat va halollikni o‘zida mujassam etgan, innovatsion yondashuv orqali mahsulotlarini yangicha ta’m va zamonaviy dizaynda taqdim etuvchi brend. O‘zbekistonda birinchi bo‘lib jiz mahsulotlarini yuqori sifat va halollik tamoyillariga asoslangan holda ishlab chiqarishni yo‘lga qo‘ygan Aqvo, mijozlar ishonchini qozonib kelmoqda"
+  },
+  "Sizning aqvo bilan lahzalaringiz": "Ваши моменты с AQVO",
+  "Bizning Instagram": "Наш Инстаграм",
+  "Bizning Telegram": "Наш Телеграмм"
 }

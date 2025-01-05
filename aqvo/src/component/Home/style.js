@@ -17,12 +17,14 @@ export const Navbar = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 1160px;
   height: 60px;
-  background-color: rgb(99, 21, 25);
+  background-color: #441118a1;
   border-radius: 40px;
   color: white;
   margin-top: 20px;
+  position: fixed;
+  z-index: 1111;
 `;
 
 export const Category = styled.div`

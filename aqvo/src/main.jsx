@@ -6,12 +6,14 @@ import './component/Home/i18n.jsx';
 import { BgImg } from './component/BgImg/index.jsx';
 import { SocialMedia } from './component/SocialMedia/index.jsx';
 import Carusel from './component/Carusel/index.jsx';
+import Sliders from './component/Sliders/index.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Home />
     <BgImg />
     <Carusel />
-    {/* <SocialMedia /> */}
+    <SocialMedia />
+    <Sliders />
   </React.StrictMode>,
 );

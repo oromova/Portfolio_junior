@@ -18,7 +18,7 @@ export const SocialMedia = () => {
         <Link href='https://www.instagram.com/aqvo_jiz/'>{t('Bizning Instagram')}</Link>
       </LinkButton>
       <LinkButton>
-        <Link href='https://www.instagram.com/aqvo_jiz/'>{t('Bizning Telegram')}</Link>
+        <Link href='https://'>{t('Bizning Telegram')}</Link>
       </LinkButton>
     </Container>
   );

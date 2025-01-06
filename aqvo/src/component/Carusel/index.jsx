@@ -10,7 +10,7 @@ import { Div, Img, Subtitle, Title, Wrapper } from '../../component/Carusel/styl
 export const Carusel = () => {
   return (
     <Swiper
-      modules={[Autoplay, Pagination, Scrollbar]}
+      modules={[Autoplay, Pagination]}
       spaceBetween={5}
       slidesPerView={1}
       pagination={true}
@@ -18,7 +18,7 @@ export const Carusel = () => {
         delay: 1500,
         disableOnInteraction: false
       }}
-      scrollbar={{ draggable: true }}
+      // scrollbar={{ draggable: true }}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >

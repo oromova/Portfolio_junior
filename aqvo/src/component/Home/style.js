@@ -24,7 +24,7 @@ export const Navbar = styled.div`
   color: white;
   margin-top: 20px;
   position: fixed;
-  z-index: 1111;
+  z-index: 111;
 `;
 
 export const Category = styled.div`

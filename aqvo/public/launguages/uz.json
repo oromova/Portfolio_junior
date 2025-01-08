@@ -9,16 +9,24 @@
   "Ismingiz": "Ismingiz",
   "Familiyangiz": "Familiyangiz",
   "Telefon raqamingiz": "Telefon raqamingiz",
-  "Telegram": "Telegram username",
+  "Telegram username": "Telegram username",
   "Hudud": "Hudud",
   "Mahsulot": "Mahsulot",
   "Franshiza": "Franshiza",
   "Xabar": "Xabar",
   "carusel": {
-    "title": "Aqvo brendi haqida",
-    "subtitle": "Aqvo - sifat va halollikni o‘zida mujassam etgan, innovatsion yondashuv orqali mahsulotlarini yangicha ta’m va zamonaviy dizaynda taqdim etuvchi brend. O‘zbekistonda birinchi bo‘lib jiz mahsulotlarini yuqori sifat va halollik tamoyillariga asoslangan holda ishlab chiqarishni yo‘lga qo‘ygan Aqvo, mijozlar ishonchini qozonib kelmoqda"
+    "title1": "Aqvo brendi haqida",
+    "title2": "M",
+    "subtitle1": "Aqvo - sifat va halollikni o‘zida mujassam etgan, innovatsion yondashuv orqali mahsulotlarini yangicha ta’m va zamonaviy dizaynda taqdim etuvchi brend. O‘zbekistonda birinchi bo‘lib jiz mahsulotlarini yuqori sifat va halollik tamoyillariga asoslangan holda ishlab chiqarishni yo‘lga qo‘ygan Aqvo, mijozlar ishonchini qozonib kelmoqda"
   },
   "Sizning aqvo bilan lahzalaringiz": "Sizning aqvo bilan lahzalaringiz",
   "Bizning Instagram": "Bizning Instagram",
-  "Bizning Telegram": "Bizning Telegram"
+  "Bizning Telegram": "Bizning Telegram",
+  "'Aqvo' bilan yangicha ta'mni his eting.": "'Aqvo' bilan yangicha ta'mni his eting.",
+  "ContactUs2": "Aqvo brendi sizni yangi ta'mlarni kashf etishga taklif qiladi. Bizning mahsulotlarimiz har bir iste’molchiga sifatli va innovatsion yondashuv orqali yangi, o‘ziga xos ta’mni taqdim etadi. Aqvo – bu nafaqat ta’m, balki sog‘lom va halol mahsulotlar bilan yangi tajribani his qilish imkoniyati. Yangi ta’mni biz bilan birga kashf eting va haqiqiy sifatni his eting!",
+  "Bog'lanish uchun telefon raqamingiz:": "Bog'lanish uchun telefon raqamingiz:",
+  "Tel: +998957724444": "Tel: +998957724444",
+  "Tel: +998996440101": "Tel: +998996440101",
+  "Bizning Sertifikatlarimiz": "Bizning Sertifikatlarimiz",
+  "Siz izlagan ta'm, sifat, poklik va o‘zgachalik... Barchasi bir nuqtada jamlanib, “Aqvo”ga aylanadi!": "Siz izlagan ta'm, sifat, poklik va o‘zgachalik... Barchasi bir nuqtada jamlanib, “Aqvo”ga aylanadi!"
 }

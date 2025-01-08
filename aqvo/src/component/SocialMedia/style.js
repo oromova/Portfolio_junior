@@ -30,13 +30,14 @@ export const Title = styled.p`
 export const LinkButton = styled.button`
   display: block;
   width: 260px;
-  height: 55px;
-  margin: 20px;
+  margin: 10px;
   font-size: 14px;
   background-color: inherit;
   color: inherit;
   border: 1px solid white;
   border-radius: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   cursor: pointer;
   &:hover {
     background-color: white;
@@ -49,4 +50,9 @@ export const Link = styled.a`
   cursor: pointer;
   text-decoration: none;
   color: inherit;
+`;
+
+export const Media = styled.div`
+  display: flex;
+  flex-direction: column;
 `;

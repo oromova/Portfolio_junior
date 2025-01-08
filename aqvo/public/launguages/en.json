@@ -9,12 +9,23 @@
   "Ismingiz": "Your name",
   "Familiyangiz": "Your Last name",
   "Telefon raqamingiz": "Your Phone number",
-  "Telegram": "Telegram Username",
+  "Telegram username": "Telegram Username",
   "Hudud": "Region",
   "Mahsulot": "Product",
   "Franshiza": "Franchise",
   "Xabar": "Message",
   "Sizning aqvo bilan lahzalaringiz": "Your moments with Aqva",
   "Bizning Instagram": "Our Instagram",
-  "Bizning Telegram": "Our Telegram"
+  "Bizning Telegram": "Our Telegram",
+  "'Aqvo' bilan yangicha ta'mni his eting.": "Experience the new taste with 'AQVO'.",
+  "Aqvo brendi sizni yangi ta'mlarni kashf etishga taklif qiladi. Bizning mahsulotlarimiz har bir iste’molchiga sifatli va innovatsion yondashuv orqali yangi, o‘ziga xos ta’mni taqdim etadi. Aqvo – bu nafaqat ta’m, balki sog‘lom va halol mahsulotlar bilan yangi tajribani his qilish imkoniyati. Yangi ta’mni biz bilan birga kashf eting va haqiqiy sifatni his eting!": "The Aqvo brand invites you to discover new tastes. Our products provide a unique taste to each consumer through quality and an innovative approach. Aqvo is not just taste; it’s the opportunity to experience new, healthy, and halal products. Discover new taste with us and experience true quality!",
+  "Bog'lanish uchun telefon raqamingiz:": "Our contact phone numbers:",
+  "Tel: +998957724444": "Tel: +998957724444",
+  "Tel: +998996440101": "Tel: +998996440101",
+  "Bizning Sertifikatlarimiz": "Our certificates",
+  "Siz izlagan ta'm, sifat, poklik va o‘zgachalik... Barchasi bir nuqtada jamlanib, “Aqvo”ga aylanadi!": "The taste, quality, purity, and uniqueness you are looking for... All come together in 'Aqvo'!",
+  "carusel": {
+    "title1": "Delivery Range",
+    "subtitle": "Aqvo - sifat va halollikni o‘zida mujassam etgan, innovatsion yondashuv orqali mahsulotlarini yangicha ta’m va zamonaviy dizaynda taqdim etuvchi brend. O‘zbekistonda birinchi bo‘lib jiz mahsulotlarini yuqori sifat va halollik tamoyillariga asoslangan holda ishlab chiqarishni yo‘lga qo‘ygan Aqvo, mijozlar ishonchini qozonib kelmoqda"
+  }
 }

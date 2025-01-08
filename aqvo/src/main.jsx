@@ -8,6 +8,8 @@ import { SocialMedia } from './component/SocialMedia/index.jsx';
 import Carusel from './component/Carusel/index.jsx';
 import Sliders from './component/Sliders/index.jsx';
 import { ContactUs } from './component/ContactUs/index.jsx';
+import { Certificates } from './component/Certificates/index.jsx';
+import { Footer } from './component/Footer/index.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -17,5 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <SocialMedia />
     <Sliders />
     <ContactUs />
+    <Certificates />
+    <Footer />
   </React.StrictMode>,
 );

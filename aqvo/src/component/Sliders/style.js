@@ -1,14 +1,11 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
-  direction: ${(props) => (props === "image" ? "horizontal" : "ltr")};
-`;
+export const Wrapper = styled.div``;
 
 export const ImgSlide = styled.img`
   width: 300px;
   height: 300px;
-  overflow-clip-margin: content-box;
-  overflow: clip;
+  margin-right: 20px;
   border-radius: 20px;
   margin-top: 150px;
 `;

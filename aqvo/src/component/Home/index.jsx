@@ -2,8 +2,7 @@ import { Category, Container, ContainerContact, ContainerLang, Description, Icon
 import logo from '../../assets/logo.png';
 import { useTranslation } from 'react-i18next';
 import Marquee from "react-fast-marquee";
-import Modal from './HomeModal';
-// import homeImg from '../../assets/homeBack.jpg';
+import { HomeModal } from './HomeModal';
 
 export const Home = () => {
   const { t, i18n } = useTranslation();
@@ -48,9 +47,8 @@ export const Home = () => {
               </ContainerLang>
               {/* Contact */}
               <ContainerContact>
-                <Modal />
+                <HomeModal />
               </ContainerContact>
-
             </Category>
           </Navbar>
         </Wrapper>

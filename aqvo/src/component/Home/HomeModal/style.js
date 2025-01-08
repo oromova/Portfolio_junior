@@ -36,7 +36,7 @@ export const ModalContent = styled.div`
   padding-right: 1.5rem;
   max-width: 530px;
   border-radius: 0.25rem;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   background-color: rgb(153, 27, 27);
 `;
 

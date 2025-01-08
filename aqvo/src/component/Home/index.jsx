@@ -47,7 +47,7 @@ export const Home = () => {
               </ContainerLang>
               {/* Contact */}
               <ContainerContact>
-                <HomeModal />
+                <HomeModal title={t("Bog'lanish")} navbar={true} />
               </ContainerContact>
             </Category>
           </Navbar>
@@ -71,6 +71,10 @@ export const Home = () => {
               </Description.Subtitle>
             </Description>
           </Wrapper>
+
+          <button>
+            <HomeModal title={"Order"} />
+          </button>
         </Container>
       </Main>
     </div >

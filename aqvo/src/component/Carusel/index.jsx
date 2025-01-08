@@ -39,10 +39,10 @@ export const Carusel = () => {
       spaceBetween={5}
       slidesPerView={1}
       pagination={true}
-      autoplay={{
-        delay: 1500,
-        disableOnInteraction: false
-      }}
+      // autoplay={{
+      //   delay: 1500,
+      //   disableOnInteraction: false
+      // }}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >

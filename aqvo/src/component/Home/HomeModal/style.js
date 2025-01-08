@@ -38,11 +38,16 @@ export const ModalContent = styled.div`
   border-radius: 0.25rem;
   /* border: 2px solid black; */
   background-color: rgb(153, 27, 27);
+  position: relative;
 `;
 
 export const ModalForm = styled.form`
   display: flex;
   margin-bottom: 25px;
+  .error-message {
+  color: red;
+  font-size: 12px;
+}
 `;
 
 export const ModalInput = styled.input`
@@ -77,6 +82,18 @@ export const ModalButton = styled.button`
   padding: 8px 0px;
   font-weight: 500;
   font-size: 16px;
+`;
+export const ButtonClose = styled.button`
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: inherit;
+  color: white;
+  border-radius: 50%;
+  padding: 0.5px 6px;
+  border: 2px solid white;
+  font-size: 20px;
+  transform: rotate(45deg);
 `;
 
 export const ButtonContact = styled.button`

@@ -21,7 +21,48 @@ export const HomeModal = ({ title, navbar }) => {
   const [formData, setFormData] = useState({
     name: '',
     surname: ''
-  })
+  });
+
+  const [errors, setErrors] = useState({
+    name: "",
+    surname: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  // Formni tekshirish va yuborish
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Formaning qayta yuklanishini oldini olish
+
+    let formIsValid = true;
+    let newErrors = {};
+
+    // Ism inputini tekshirish
+    if (!formData.name) {
+      newErrors.name = "Ismingizni kiriting!";
+      formIsValid = false;
+    }
+
+    // Email inputini tekshirish
+    if (!formData.surname) {
+      newErrors.surname = "Emailni kiriting!";
+      formIsValid = false;
+    }
+
+    // Agar xatolik bo'lmasa, formani yuborish
+    if (formIsValid) {
+      console.log("Formani muvaffaqiyatli yubordingiz!");
+      // Formani haqiqatan yuborish yoki boshqa amallarni bajarish mumkin
+    } else {
+      setErrors(newErrors); // Xatoliklarni state'ga o'rnatish
+    }
+  };
 
   // Modalni ochish
   const openModal = () => {
@@ -47,7 +88,6 @@ export const HomeModal = ({ title, navbar }) => {
       data: {
         "chat_id": chat_id,
         "text": messageContent,
-
       }
     }).then((res) => {
       alert("Muvaffaqiyatli yuborildi");
@@ -68,14 +108,26 @@ export const HomeModal = ({ title, navbar }) => {
       {
         modalOpen && createPortal(
           <ModalContainer>
-            <ModalForm action="">
+            <ModalForm action="" onSubmit={handleSubmit}>
               <ModalContent>
                 <ModalForm>
                   <ButtonClose onClick={closeModal}> + </ButtonClose>
-                  <ModalInput placeholder={t("Ismingiz")} id='name'required onChange={(e) => setName(e.target.value)} />
-                  <span id="nameError" class="error-message" style="display: none;">Ismni kiriting!</span>
-                  <ModalInput placeholder={t("Familiyangiz")} id='surname' onChange={(e) => setSurname(e.target.value)} />
-                </ModalForm>
+                  <ModalInput
+                    placeholder={t("Ismingiz")}
+                    required
+                    onChange={(e) => setName(e.target.value)} />
+                    {errors.name && 
+                      <span class="error-message" style="display: none;">
+                        {errors.name}
+                      </span>}
+                    <ModalInput 
+                      placeholder={t("Familiyangiz")} 
+                      onChange={(e) => setSurname(e.target.value)} />
+                    {errors.surname && 
+                      <span class="error-message">
+                        {errors.surname}
+                      </span>}
+                  </ModalForm>
                 <ModalForm>
                   <ModalInput placeholder={t("Telefon raqamingiz")} id='phone' onChange={(e) => setTel(e.target.value)} />
                   <ModalInput placeholder={t("Telegram username")} id='telegram' onChange={(e) => setUsername(e.target.value)} />

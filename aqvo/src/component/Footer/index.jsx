@@ -13,12 +13,12 @@ export const Footer = () => {
       </Slogan>
       <LinkDiv>
         <Instagram>
-        
+
         </Instagram>
       </LinkDiv>
-      <Slogan>© All rights reserved</Slogan>
+      <Slogan>© {t("Barcha huquqlar himoyalangan")}</Slogan>
       <a href="https://www.limsa.uz/" target="_blank" className='link'>
-      Created by Limsa
+        {t("Limsa tomonidan yaratilgan")}
       </a>
     </Container>
   );

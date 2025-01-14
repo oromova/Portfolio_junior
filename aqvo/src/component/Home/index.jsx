@@ -1,56 +1,27 @@
-import { Category, Container, ContainerContact, ContainerLang, Description, Icons, LangOption, LangSelect, List, Main, Navbar, Wrapper } from './style';
-import logo from '../../assets/logo.png';
+import { Container, Description, LangOption, Main, Wrapper } from './style';
 import { useTranslation } from 'react-i18next';
 import Marquee from "react-fast-marquee";
-import { HomeModal } from './HomeModal';
+import btnImg from "../../assets/logo-admin.svg";
+import GenericNavbar from '../Generic/Navbar';
+import { BgImg } from '../BgImg';
+import Carusel from '../Carusel';
+import SocialMedia from '../SocialMedia';
+import Sliders from '../Sliders';
+import { ContactUs } from '../ContactUs';
+import { GenericCertificates } from '../Generic/Certificates';
+import { GenericFooter } from '../Generic/Footer';
+import GenericModal from '../Generic/Modal';
 
 export const Home = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const languages = localStorage.getItem('i18nextLng');
-
-  const handleChange = (event) => {
-    const selectedLaungage = event.target.value;
-    i18n.changeLanguage(selectedLaungage);
-  };
-
 
   return (
     <div>
       <Container>
         <Wrapper>
           {/* Navbar */}
-          <Navbar>
-            {/* Home,About */}
-            <Category>
-              <List>
-                <List.Item>
-                  <List.A>{t('Bosh sahifa')}</List.A>
-                </List.Item>
-                <List.Item>
-                  <List.A>{t('Biz haqimizda')}</List.A>
-                </List.Item>
-              </List>
-            </Category>
-            {/* Logo */}
-            <Category>
-              <Icons.Logo src={logo} alt="logo" />
-            </Category>
-            {/* Change Languages, Contact */}
-            <Category>
-              <ContainerLang>
-                <LangSelect name="Lng" id="lng" onChange={handleChange} value={languages}>
-                  <LangOption value='uz'>Uzb</LangOption>
-                  <LangOption value='ru'>Ru</LangOption>
-                  <LangOption value='en'>En</LangOption>
-                </LangSelect>
-                {/* <DropIcon /> */}
-              </ContainerLang>
-              {/* Contact */}
-              <ContainerContact>
-                <HomeModal title={t("Bog'lanish")} navbar={true} />
-              </ContainerContact>
-            </Category>
-          </Navbar>
+          <GenericNavbar />
         </Wrapper>
       </Container>
       {/* Body */}
@@ -69,14 +40,31 @@ export const Home = () => {
               <Description.Subtitle>
                 {t('AQVO – O‘zbekistonda birinchi bo‘lib sifat va halollikni o‘zida mujassam etgan, jiz mahsulotlarini yangicha ta’m va zamonaviy dizaynda taqdim etuvchi yetakchi brend.')}
               </Description.Subtitle>
+              <div style={{
+                width: '158px', height: '158px',
+                borderRadius: '50%', background: 'inherit',
+                border: '1px solid rgb(236, 230, 230)', position: 'relative'
+              }}
+              >
+                <div style={{
+                  width: '145px', height: '145px',
+                  textAlign: 'center', borderRadius: '50%', position: "absolute",
+                  top: '6px', left: '6px', backgroundImage: "URL('btnImg')",
+                }}>
+                </div>
+              </div>
             </Description>
+            <GenericModal className='order' title={"Order"} />
           </Wrapper>
-
-          <button>
-            <HomeModal title={"Order"} />
-          </button>
         </Container>
       </Main>
+      <BgImg />
+      <Carusel />
+      <SocialMedia />
+      <Sliders />
+      <ContactUs />
+      <GenericCertificates />
+      <GenericFooter />
     </div >
   );
 };

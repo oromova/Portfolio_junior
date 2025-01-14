@@ -1,10 +1,13 @@
-import React from 'react';
+import GenericNavbar from '../Generic/Navbar';
+import { Container, Wrapper } from './style';
 
-export const AboutUs
-  = () => {
-    return (
-      <div>AboutUs
-
-      </div>
-    );
-  };
+export const About = () => {
+  return (
+    <Container>
+      <Wrapper>
+        <GenericNavbar/>
+      </Wrapper>
+    </Container>
+  )
+}
+export default About;

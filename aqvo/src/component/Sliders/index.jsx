@@ -34,14 +34,14 @@ const Sliders = () => {
 
   return (
     <div>
-      <Marquee>
+      <Marquee >
         {images.map((image, index) => (
-          <ImgSlide src={image} alt={`Slide ${index + 1}`} />
+          <ImgSlide key={image} src={image} alt={`Slide ${index + 1}`} />
         ))}
       </Marquee>
       <Marquee direction="right">
         {images2.map((image, index) => (
-          <ImgSlideTwo src={image} alt={`Slide ${index + 1}`} />
+          <ImgSlideTwo key={image} src={image} alt={`Slide ${index + 1}`} />
         ))}
       </Marquee>
 

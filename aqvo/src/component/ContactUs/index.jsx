@@ -1,19 +1,21 @@
 
 import React from 'react';
 import { ContactTitle, Container, InfoBox, Link, Subtitle, Title, Wrapper } from './style';
-import { ModalButton, ModalContent, ModalForm, ModalInput, ModalSelect, Textarea } from '../Home/HomeModal/style';
+import { ModalButton, ModalContent, ModalForm, ModalInput, ModalSelect, Textarea } from '../Generic/Modal/style';
 import { useTranslation } from 'react-i18next';
 
 export const ContactUs = () => {
   const { t } = useTranslation();
+  const languages = localStorage.getItem('i18nextLng');
+
   const savebtn = (e) => {
     if (!name) {
 
     }
     e.preventDefault();
     console.log("jjjghghj");
-
   };
+
   return (
     <Container>
       <Wrapper>

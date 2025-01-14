@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import bgImg from "../../assets/bg_certificate.jpg";
+import bgImg from "../../../assets/bg_certificate.jpg";
 
 export const Container = styled.div`
   width: 100%;
